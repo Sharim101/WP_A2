@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A blog showcasing traditional Pakistani recipes">
+    <title>Pakistani Cuisine Recipe Blog</title>
+    
+    <!--Display/Flex CSS -->
+    <link rel="stylesheet" href="1.css" id="layout1">
+
+    <!-- float CSS -->
+    <link rel="stylesheet" href="2.css" id="layout2"disabled>
+
+    <!-- CSS Grid -->
+    <link rel="stylesheet" href="3.css" id="layout3"disabled>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Pakistani Cuisine</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#recipes">Recipes</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <section id="home" class="home">
+            <div class="home-content">
+                <h2>Welcome to Pakistani Cuisine Blog</h2>
+                <p>Explore the authentic taste of Pakistan through our curated recipes!</p>
+            </div>
+        </section>
+
+        <section id="recipes" class="recipes">
+            <h2>Popular Recipes</h2>
+            <div class="recipe-grid">
+                <div class="recipe-card">
+                    <img src="biryani.jpeg" alt="Biryani">
+                    <h3>Biryani</h3>
+                    <p>Aromatic rice dish mixed with spiced meat and vegetables.</p>
+                    <button class="btn">View Recipe</button>
+                </div>
+                <div class="recipe-card">
+                    <img src="nihari.jpeg" alt="Nihari">
+                    <h3>Nihari</h3>
+                    <p>Spicy slow-cooked beef stew with a rich texture.</p>
+                    <button class="btn">View Recipe</button>
+                </div>
+                <div class="recipe-card">
+                    <img src="poori.jpeg" alt="Halwa Puri">
+                    <h3>Halwa Puri</h3>
+                    <p>Popular breakfast dish of fried puris with sweet halwa.</p>
+                    <button class="btn">View Recipe</button>
+                </div>
+                <div class="recipe-card">
+                    <img src="chapli.jpg" alt="Chapli Kebab">
+                    <h3>Chapli Kebab</h3>
+                    <p>Minced meat kebabs flavored with spices and herbs.</p>
+                    <button class="btn">View Recipe</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About Us</h2>
+            <p>We are passionate about sharing authentic Pakistani recipes with food enthusiasts across the globe. Each recipe on this blog has been tried and tested, ensuring that you can experience the real taste of Pakistani cuisine.</p>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <table>
+                <tr>
+                    <th>Contact</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                </tr>
+                <tr>
+                    <td>Support</td>
+                    <td>support@pakistanicuisine.com</td>
+                    <td>+92 333 5456756</td>
+                </tr>
+                <tr>
+                    <td>Inquiries</td>
+                    <td>info@pakistanicuisine.com</td>
+                    <td>+92 321 0000000</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Pakistani Cuisine Blog. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Simple script to switch between CSS files
+        function setLayout(layout) {
+            document.getElementById('layout1').disabled = true;
+            document.getElementById('layout2').disabled = true;
+            document.getElementById('layout3').disabled = true;
+
+            if (layout === 'layout1') {
+                document.getElementById('layout1').disabled = false;
+            } else if (layout === 'layout2') {
+                document.getElementById('layout2').disabled = false;
+            } else if (layout === 'layout3') {
+                document.getElementById('layout3').disabled = false;
+            }
+        }
+        
+        // Example usage: setLayout('layout1'); // Update this based on user choice
+    </script>
+</body>
+</html>
